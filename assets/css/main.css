@@ -1,0 +1,176 @@
+div#header{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  bottom:85%;
+  background-color: rgb(242, 239, 255);
+  color:white;
+  padding: 2em;
+  color: #6C5DA5;
+  border-bottom: 1.5px solid #6C5DA5;
+}
+
+div.container{
+  position: relative;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  border-radius: 10px;
+}
+
+div.reporte{
+  border:1px solid lightgray;
+  padding: 0 0 1.5em 0;
+  border-radius: 10px;
+}
+
+div.tutoriales{
+  border:1px solid lightgray;
+  padding: 0 0 1.5em 0;
+  border-radius: 10px;
+  margin-left: 4em;
+}
+
+form.formOrden span:not(.error){
+  display: inline-block;
+  width: 130px;
+  margin-bottom: 2em;
+  margin-left: 2em;
+
+  padding: .3em;
+}
+span.step{
+  font-weight: bold;
+  min-width: 80%;
+
+}
+span.title{
+  display: inline-block;
+  background-color: rgb(242, 239, 255);
+  min-width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+  font-weight: bold;
+  font-size: large;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+form.formOrden input, select{
+  width: 300px;
+  height: 32px;
+  border-radius: 5px;
+  border:2px solid #afadba;
+
+}
+input[type=submit]{
+  background-color: lightgray;
+  border-color: gray;
+}
+
+input:focus, select, textarea{
+  outline: none;
+
+}
+
+textarea{
+  width: 300px;
+  outline: none;
+  height: 130px;
+  border-radius: 5px;
+  border:2px solid #afadba;
+}
+
+span.messages{
+  min-width: 200px;
+  border:1px solid red;
+
+}
+/*input.valid{
+  outline:none;
+  background-color: #76de76;
+  border-color: #59bf59;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}*/
+input.invalid{
+  outline:none;
+  background-color: #de5d5d;
+  border-color: #e88484;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+
+}
+
+span.error {
+  display: none;
+  width  : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  border-radius: .4em;
+  background-color: #900;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+span.error.active {
+  padding: 0.5em;
+  transition: display 0.5 ease-out;
+}
+
+/*input#nombre:valid{
+  border-color: green;
+}
+input#nombre:invalid{
+  border-color: red;
+}*/
+
+
+@media (max-width: 575.98px) {
+  nav h3{
+    font-size:1em;
+  }
+  nav img{
+    height: 50px;
+  }
+  .container{
+    margin-top: 20%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+  .tutoriales{
+    display: none;
+  }
+  .reporte{
+    margin-top: 5em;
+  }
+ }
+
+@media (min-width: 300) and (max-width: 400) {
+  div#header{
+    bottom:95%;
+  }
+  nav h3{
+    font-size:2em;
+  }
+  nav img{
+    height: 60px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav h3{
+    font-size:2em;
+  }
+  nav img{
+    height: 60px;
+  }}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
